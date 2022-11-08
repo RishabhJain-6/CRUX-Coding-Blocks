@@ -23,21 +23,21 @@ import java.util.*;
 public class Main {
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
-		long num = scn.nextLong();
-		long multiplier = 1;
-		long rev = 0;
-		while (num != 0) {
-			long digit = num % 10;
-			if (digit == 0) {
-				digit = 5;
-			}
-			rev = rev + digit * multiplier;
-			multiplier = multiplier * 10;
-			num = num / 10;
+	long num = scn.nextLong();
+	long multiplier = 1;
+	long rev = 0;
+	while (num != 0) {
+		long digit = num % 10;
+		if (digit == 0) {
+			digit = 5;
 		}
-		if (rev == 0) {
-			rev = 5;
-		} 
-		System.out.println(rev);
+		rev = rev + digit * multiplier;
+		multiplier = multiplier * 10;
+		num = num / 10;
+	}
+	if (rev == 0) {
+		rev = 5;
+	} 
+	System.out.println(rev);
     }
 }
