@@ -66,7 +66,7 @@ public class Main {
 		}
 		return sum;
 	}
-  public static void totalRainWater2(int[] arr) { //Another Way
+  	public static void totalRainWater2(int[] arr) { //Another Way
 		int n = arr.length;
 		int[] max_right_wall = new int[n];
 		int max = 0;
