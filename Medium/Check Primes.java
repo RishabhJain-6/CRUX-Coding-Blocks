@@ -21,20 +21,20 @@ import java.util.*;
 public class Main {
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
-		    int n = scn.nextInt();
-		    int count = 0;
-		    int i = 2;
-		    while (i <= Math.sqrt(n)) {
-			    int rem = n % i;
-			    if (rem == 0) {
-				    count++;
-			    }
-			    i++;
-		    }
-		    if (count == 0 && n != 1) {
-			    System.out.println("Prime");
-		    } else {
-			    System.out.println("Not Prime");
-		    }
+	int n = scn.nextInt();
+	int count = 0;
+	int i = 2;
+	while (i <= Math.sqrt(n)) {
+		int rem = n % i;
+		if (rem == 0) {
+			count++;
+		}
+		i++;
+	}
+	if (count == 0 && n != 1) {
+		System.out.println("Prime");
+	} else {
+		System.out.println("Not Prime");
+	}
     }
 }
