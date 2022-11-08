@@ -39,26 +39,26 @@ import java.util.*;
 public class Main {
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
-		    int T = scn.nextInt();
-		    int i = 1;
-		    while (i <= T) {
-			    int M = scn.nextInt();
-			    int N = scn.nextInt();
-			    int m = 0, n = 0;
-			    int a = 1;
-			    while (true) {
-				    m = m + a;
-				     n = n + (a + 1);
-				    if (m > M) {
-					    System.out.println("Harshit");
-					    break;
-				    } else if (n > N) {
-					    System.out.println("Aayush");
-					    break;
-				    }
-				    a = a + 2;
-			    }
-			    i++;
-		    }
+	int T = scn.nextInt();
+	int i = 1;
+	while (i <= T) {
+		int M = scn.nextInt();
+		int N = scn.nextInt();
+		int m = 0, n = 0;
+		int a = 1;
+		while (true) {
+			m = m + a;
+			n = n + (a + 1);
+			if (m > M) {
+				System.out.println("Harshit");
+				break;
+			} else if (n > N) {
+				System.out.println("Aayush");
+				break;
+			}
+			a = a + 2;
+		}
+		i++;
+	}
     }
 }
