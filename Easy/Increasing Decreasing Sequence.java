@@ -30,27 +30,27 @@ import java.util.*;
 public class Main {
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
-		    int n = scn.nextInt();
-		    int prev = Integer.MAX_VALUE;
-		    boolean decreasing = true;
-		    boolean isValid = true;
-		    for (int i = 0; i < n; i++) {
-			    int num = scn.nextInt();
+	int n = scn.nextInt();
+	int prev = Integer.MAX_VALUE;
+	boolean decreasing = true;
+	boolean isValid = true;
+	for (int i = 0; i < n; i++) {
+		int num = scn.nextInt();
 
-			    if (decreasing && num > prev) { // Entering increasing state
-				    decreasing = false;
-			    }
+		if (decreasing && num > prev) { // Entering increasing state
+			decreasing = false;
+		}
 
-			    if (!decreasing && num < prev) { // Decreasing number in increasing state
-				    isValid = false;
-			    }
+		if (!decreasing && num < prev) { // Decreasing number in increasing state
+			isValid = false;
+		}
 
-			    if (prev == num) { // Strictly
-				    isValid = false;
-			    }
+		if (prev == num) { // Strictly
+			isValid = false;
+		}
 			
-			    prev = num;
-		    }
-		    System.out.println(isValid);
+		prev = num;
+	}
+	System.out.println(isValid);
     }
 }
