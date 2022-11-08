@@ -24,19 +24,19 @@ import java.util.*;
 public class Main {
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
-		int num = scn.nextInt();
-		int esum = 0, osum = 0, n = 1;
-		while (num > 0) {
-			int digit = num % 10;
-			if (n % 2 != 0) {
-				osum = osum + digit;
-			} else {
-				esum = esum + digit;
-			}
-			n++;
-			num = num / 10;
+	int num = scn.nextInt();
+	int esum = 0, osum = 0, n = 1;
+	while (num > 0) {
+		int digit = num % 10;
+		if (n % 2 != 0) {
+			osum = osum + digit;
+		} else {
+			esum = esum + digit;
 		}
-		System.out.println(osum);
-		System.out.println(esum);
+		n++;
+		num = num / 10;
+	}
+	System.out.println(osum);
+	System.out.println(esum);
     }
 }
