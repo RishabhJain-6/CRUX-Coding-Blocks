@@ -34,16 +34,16 @@ import java.util.*;
 public class Main {
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
-		    int n = scn.nextInt();
-		    int multiplier = 10;
-		    int num = 0;
-		    int i = 1;
-		    while (n > 0) {
-			    int digit = n % 10;
-			    num += i * (int)Math.pow(multiplier, digit - 1);
-			    i++;
-			    n=n/10;
-		    }
-		    System.out.println(num);
+	int n = scn.nextInt();
+	int multiplier = 10;
+	int num = 0;
+	int i = 1;
+	while (n > 0) {
+		int digit = n % 10;
+		num += i * (int)Math.pow(multiplier, digit - 1);
+		i++;
+		n=n/10;
+	}
+	System.out.println(num);
     }
 }
