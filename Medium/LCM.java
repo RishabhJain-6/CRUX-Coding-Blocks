@@ -27,16 +27,16 @@ import java.util.*;
 public class Main {
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
-		    int a = scn.nextInt();
-		    int b = scn.nextInt();
-		    int divisor = a;
-		    int dividend = b;
-		    while (divisor != 0) {
-			    int rem = dividend % divisor;
-			    dividend = divisor;
-			    divisor = rem;
-		    }
-		    int lcm = (a * b) / dividend;
-		    System.out.println(lcm);
+	int a = scn.nextInt();
+	int b = scn.nextInt();
+	int divisor = a;
+	int dividend = b;
+	while (divisor != 0) {
+		int rem = dividend % divisor;
+		dividend = divisor;
+		divisor = rem;
+	}
+	int lcm = (a * b) / dividend;
+	System.out.println(lcm);
     }
 }
