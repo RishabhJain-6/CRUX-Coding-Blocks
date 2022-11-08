@@ -30,20 +30,20 @@ import java.util.*;
 public class Main {
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
-		    int N = scn.nextInt();
-		    int i = 0;
-		    while (i < N) {
-			    int n = scn.nextInt();
-			    int num = 0;
-			    int m = 0;
-			    while (n > 0) {
-				    int digit = n % 10;
-				    num = num + digit * (int) Math.pow(2, m);
-				    m++;
-				    n = n / 10;
-			    }
-			  System.out.println(num);
-			  i++;
-		  }
+	int N = scn.nextInt();
+	int i = 0;
+	while (i < N) {
+		int n = scn.nextInt();
+		int num = 0;
+		int m = 0;
+		while (n > 0) {
+			int digit = n % 10;
+			num = num + digit * (int) Math.pow(2, m);
+			m++;
+			n = n / 10;
+		}
+		System.out.println(num);
+		i++;
+	}
     }
 }
