@@ -30,27 +30,27 @@ import java.util.*;
 public class Main {
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
-		    int a = scn.nextInt();
-		    int b = scn.nextInt();
-		    int c = scn.nextInt();
-		    int b2 = (int) Math.pow(b, 2);
-		    int D = b2 - 4 * a * c;
-		    if (D == 0) {
-			    int root = -b / 2 * a;
-			    System.out.println("Real and Equal");
-			    System.out.println(root + " " + root);
-		    } else if (D > 0) {
-			    int sD = (int) Math.sqrt(D);
-			    int root1 = (-b + sD) / 2 * a;
-			    int root2 = (-b - sD) / 2 * a;
-			    System.out.println("Real and Distinct");
-			    if (root1 < root2) {
-				    System.out.print(root1 + " " + root2);
-			    } else {
-				    System.out.print(root2 + " " + root1);
-			    }
-		    } else {
-			    System.out.println("Imaginary");
-		    }
+	int a = scn.nextInt();
+	int b = scn.nextInt();
+	int c = scn.nextInt();
+	int b2 = (int) Math.pow(b, 2);
+	int D = b2 - 4 * a * c;
+	if (D == 0) {
+		int root = -b / 2 * a;
+		System.out.println("Real and Equal");
+		System.out.println(root + " " + root);
+	} else if (D > 0) {
+		int sD = (int) Math.sqrt(D);
+		int root1 = (-b + sD) / 2 * a;
+		int root2 = (-b - sD) / 2 * a;
+		System.out.println("Real and Distinct");
+		if (root1 < root2) {
+			System.out.print(root1 + " " + root2);
+		} else {
+			System.out.print(root2 + " " + root1);
+		}
+	} else {
+		System.out.println("Imaginary");
+	}
     }
 }
