@@ -33,15 +33,15 @@ Given array = {2, 4, 6, 9, 17}. Target number = 17. Index = 4.
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
-		    Scanner scn = new Scanner(System.in);
-		    int n = scn.nextInt();
-		    int[] arr = new int[n];
-		    for (int i = 0; i < n; i++) {
-			    arr[i] = scn.nextInt();
-		    }
-		    int target = scn.nextInt();
-		    System.out.println(linearSearch(arr, target));
-	 }
+	Scanner scn = new Scanner(System.in);
+	int n = scn.nextInt();
+	int[] arr = new int[n];
+	for (int i = 0; i < n; i++) {
+		arr[i] = scn.nextInt();
+	}
+	int target = scn.nextInt();
+	System.out.println(linearSearch(arr, target));
+	}
 
 	public static int linearSearch(int arr[], int target) {
 		for (int i = 0; i < arr.length; i++) {
