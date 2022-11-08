@@ -28,21 +28,21 @@ import java.util.*;
 public class Main {
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
-		    int n = scn.nextInt();
-		    int row = 1;
-		    int a = 0;
-		    int b = 1;
-		    while (row <= n) {
-			    int i = 1;
-			    while (i <= row) {
-				    System.out.print(a + " ");
-				    i++;
-				    int c = a + b;
-				    a = b;
-				    b = c;
-			    }
-			    System.out.println();
-			    row++;
-		    }
+	int n = scn.nextInt();
+	int row = 1;
+	int a = 0;
+	int b = 1;
+	while (row <= n) {
+		int i = 1;
+		while (i <= row) {
+			System.out.print(a + " ");
+			i++;
+			int c = a + b;
+			a = b;
+			b = c;
+		}
+		System.out.println();
+		row++;
+	}
     }
 }
