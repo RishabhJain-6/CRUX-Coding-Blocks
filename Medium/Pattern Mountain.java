@@ -24,29 +24,29 @@ import java.util.*;
 public class Main {
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
-		int n = scn.nextInt();
-		int row = 1;
-		int numst = 2 * n - 1;
-		int a = 1;
-		while (row <= n) {
-			int i = 1;
-			while (i <= numst) {
-				if (i > row && i < numst - row + 1) {
-					System.out.print("\t");
-				} else {
-					System.out.print(a + "\t");
-				}
-				if (i <= (2 * n - 1) / 2) {
-					a++;
-				} else if (i == numst) {
-
-				} else {
-					a--;
-				}
-				i++;
+	int n = scn.nextInt();
+	int row = 1;
+	int numst = 2 * n - 1;
+	int a = 1;
+	while (row <= n) {
+		int i = 1;
+		while (i <= numst) {
+			if (i > row && i < numst - row + 1) {
+				System.out.print("\t");
+			} else {
+				System.out.print(a + "\t");
 			}
-			System.out.println();
-			row++;
+			if (i <= (2 * n - 1) / 2) {
+				a++;
+			} else if (i == numst) {
+
+			} else {
+				a--;
+			}
+			i++;
 		}
+		System.out.println();
+		row++;
+	}
     }
 }
