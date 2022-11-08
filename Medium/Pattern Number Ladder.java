@@ -29,18 +29,18 @@ import java.util.*;
 public class Main {
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
-		    int n = scn.nextInt();
-		    int row = 1;
-		    int a = 1;
-		    while (row <= n) {
-			    int i = 1;
-			    while (i <= row) {
-				    System.out.print(a + "\t");
-				    a++;
-				    i++;
-			    }
-			    row++;
-			    System.out.println();
-		    }
+	int n = scn.nextInt();
+	int row = 1;
+	int a = 1;
+	while (row <= n) {
+		int i = 1;
+		while (i <= row) {
+			System.out.print(a + "\t");
+			a++;
+			i++;
+		}
+		row++;
+		System.out.println();
+	}
     }
 }
