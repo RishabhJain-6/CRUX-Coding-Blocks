@@ -35,20 +35,20 @@ import java.util.*;
 public class Main {
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
-		    int N1 = scn.nextInt();
-		    int N2 = scn.nextInt();
-		    int i = 1;
-		    int count = 0;
-		    while (true) {
-			    if (count == N1) {
-				    break;
-			    }
-			    int m = 3 * i + 2;
-			    if (m % N2 != 0) {
-				    System.out.println(m);
-				    count++;
-			    }
-			    i++;
-		    }
+	int N1 = scn.nextInt();
+	int N2 = scn.nextInt();
+	int i = 1;
+	int count = 0;
+	while (true) {
+		if (count == N1) {
+			break;
+		}
+		int m = 3 * i + 2;
+		if (m % N2 != 0) {
+			System.out.println(m);
+			count++;
+		}
+		i++;
+	}
     }
 }
