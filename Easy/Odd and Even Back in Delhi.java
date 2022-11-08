@@ -30,25 +30,25 @@ import java.util.*;
 public class Main {
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
-		    int n = scn.nextInt();
-		    while (n > 0) {
-			    int num = scn.nextInt();
-			    int osum = 0, esum = 0, mult = 1;
-			    while (num > 0) {
-				    int digit = num % 10;
-				    if (digit % 2 != 0) {
-					    osum = osum + digit;
-				    } else {
-					    esum = esum + digit;
-				    }
-				    num = num / 10;
-			    }
-			    if (esum % 4 == 0 || osum % 3 == 0) {
-				    System.out.println("Yes");
-			    } else {
-				    System.out.println("No");
-			    }
-			    n--;
-		    }
+	int n = scn.nextInt();
+	while (n > 0) {
+		int num = scn.nextInt();
+		int osum = 0, esum = 0, mult = 1;
+		while (num > 0) {
+			int digit = num % 10;
+			if (digit % 2 != 0) {
+				osum = osum + digit;
+			} else {
+				esum = esum + digit;
+			}
+			num = num / 10;
+		}
+		if (esum % 4 == 0 || osum % 3 == 0) {
+			System.out.println("Yes");
+		} else {
+			System.out.println("No");
+		}
+		n--;
+	}
     }
 }
