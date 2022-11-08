@@ -32,22 +32,22 @@ import java.util.*;
 public class Main {
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
-		    int n = scn.nextInt();
-		    int row = 1;
-		    int a = 1;
-		    while (row <= n) {
-			    int i = 1;
-			    while (i <= row) {
-				    if (i > 1 && i < row) {
-					    System.out.print("0\t");
-				    } else {
-					    System.out.print(a + "\t");
-				    }
-				    i++;
-			    }
-			    row++;
-			    a++;
-			    System.out.println();
-		    }
+	int n = scn.nextInt();
+	int row = 1;
+	int a = 1;
+	while (row <= n) {
+		int i = 1;
+		while (i <= row) {
+			if (i > 1 && i < row) {
+				System.out.print("0\t");
+			} else {
+				System.out.print(a + "\t");
+			}
+			i++;
+		}
+		row++;
+		a++;
+		System.out.println();
+	}
     }
 }
