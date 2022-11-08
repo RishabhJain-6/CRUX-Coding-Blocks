@@ -29,13 +29,13 @@ import java.util.*;
 public class Main {
     public static void main (String args[]){
         Scanner scn = new Scanner(System.in);
-		    long n = scn.nextInt();
-		    long num = 0;
-		    for (int i = 0; i < n; i++) {
-			    long digit = scn.nextInt();
-			    long mult = (long) Math.pow(10, i);
-			    num += digit * mult;
-		    }
-		    System.out.print(num);
+	long n = scn.nextInt();
+	long num = 0;
+	for (int i = 0; i < n; i++) {
+		long digit = scn.nextInt();
+		long mult = (long) Math.pow(10, i);
+		num += digit * mult;
+	}
+	System.out.print(num);
     }
 }
