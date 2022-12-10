@@ -34,21 +34,15 @@ public class Main {
 	}
 
 	public static void canRead(String S) {
-		String str = "";
-		for (int i = 0; i <= S.length(); i++) {
-			if (i == S.length()) {
-				System.out.println(str);
-				return;
-			}
-			char ch = S.charAt(i);
+		char ch = 'a';
+		for (int i = 0; i < S.length(); i++) {
+			ch = S.charAt(i);
 			if (ch >= 'A' && ch <= 'Z') {
-				if (str.length() != 0) {
-					System.out.println(str);
-				}
-				str = "";
-				str += ch;
+				if (i != 0)
+					System.out.println();
+				System.out.print(ch + "");
 			} else {
-				str += ch;
+				System.out.print(ch + "");
 			}
 		}
 	}
