@@ -69,7 +69,6 @@ public class Main {
 		if (maze[i][j] == 'O') {
 			output[i][j] = 1;
 		} else if (maze[i][j] == 'X') {
-			output[i][j] = 0;
 			return false;
 		}
 
